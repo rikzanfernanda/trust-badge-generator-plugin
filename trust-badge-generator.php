@@ -45,64 +45,64 @@ add_shortcode('trust-badge-generator', function ($atts) {
                             <p class='text-center'>Click and choose a style first:</p>
                             <div class='img-preview text-center'>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/01-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/01-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/02-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/02-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/03-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/03-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/04-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/04-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/05-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/05-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/06-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/06-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/07-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/07-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/08-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/08-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/09-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/09-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/10-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/10-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/11-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/11-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/12-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/12-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/13-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/13-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/14-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/14-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/15-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/15-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/16-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/16-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/17-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/17-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/18-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/18-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/19-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/19-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". get_site_url() ."/wp-content/plugins/trust-badge-generator/previewimage/20-preview.png' width='350px'></button>
+                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/20-preview.png' width='350px'></button>
                                 </div>
                             </div>
                         </div>
