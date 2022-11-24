@@ -26,6 +26,9 @@ add_shortcode('trust-badge-generator', function ($atts) {
     wp_register_style('trust-badge-generator', plugin_dir_url(__FILE__) . 'trust-badge-generator.css?cache-breaker=' . time());
     wp_enqueue_style('trust-badge-generator');
 
+    wp_register_script('trust-badge-generator-image', plugin_dir_url(__FILE__) . 'trust-badge-generator-foto.js?cache-breaker=' . time());
+    wp_enqueue_script('trust-badge-generator-image');
+
     wp_register_script('trust-badge-generator', plugin_dir_url(__FILE__) . 'trust-badge-generator.js?cache-breaker=' . time());
     wp_enqueue_script('trust-badge-generator');
 
@@ -33,6 +36,7 @@ add_shortcode('trust-badge-generator', function ($atts) {
         <div id='trust_badge_generator'>
             <div class='text-center'>
                 <button id='btn-generate' class='bg-primary btn-rounded'>Click Here To Generate A Trust Badge</button>
+                <input type='hidden' id='geturl' value='".plugin_dir_url(__FILE__)."'>
             </div>
             <div class='trust_badge_generator-modal hidden'>
                 <div class='trust_badge_generator-modal-wrapper'>
@@ -45,64 +49,64 @@ add_shortcode('trust-badge-generator', function ($atts) {
                             <p class='text-center'>Click and choose a style first:</p>
                             <div class='img-preview text-center'>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/01-preview.png' width='350px'></button>
+                                    <button id='load01pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/01-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/02-preview.png' width='350px'></button>
+                                    <button id='load02pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/02-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/03-preview.png' width='350px'></button>
+                                    <button id='load03pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/03-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/04-preview.png' width='350px'></button>
+                                    <button id='load04pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/04-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/05-preview.png' width='350px'></button>
+                                    <button id='load05pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/05-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/06-preview.png' width='350px'></button>
+                                    <button id='load06pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/06-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/07-preview.png' width='350px'></button>
+                                    <button id='load07pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/07-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/08-preview.png' width='350px'></button>
+                                    <button id='load08pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/08-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/09-preview.png' width='350px'></button>
+                                    <button id='load09pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/09-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/10-preview.png' width='350px'></button>
+                                    <button id='load10pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/10-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/11-preview.png' width='350px'></button>
+                                    <button id='load11pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/11-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/12-preview.png' width='350px'></button>
+                                    <button id='load12pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/12-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/13-preview.png' width='350px'></button>
+                                    <button id='load13pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/13-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/14-preview.png' width='350px'></button>
+                                    <button id='load14pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/14-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/15-preview.png' width='350px'></button>
+                                    <button id='load15pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/15-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/16-preview.png' width='350px'></button>
+                                    <button id='load16pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/16-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/17-preview.png' width='350px'></button>
+                                    <button id='load17pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/17-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/18-preview.png' width='350px'></button>
+                                    <button id='load18pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/18-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/19-preview.png' width='350px'></button>
+                                    <button id='load19pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/19-preview.png' width='350px'></button>
                                 </div>
                                 <div>
-                                    <button><img src='". plugin_dir_url(__FILE__) ."previewimage/20-preview.png' width='350px'></button>
+                                    <button id='load20pngfile'><img src='". plugin_dir_url(__FILE__) ."previewimage/20-preview.png' width='350px'></button>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +119,7 @@ add_shortcode('trust-badge-generator', function ($atts) {
                         </div>
                         <div class='btn-wrapper hidden'>
                             <button id='btnPrev' class='btn-rounded'>Previous</button>
-                            <button id='btnDownload' class='bg-primary btn-rounded'>Download</button>
+                            <button id='btnDownload' class='hidden bg-primary btn-rounded'>Download</button>
                         </div>
                     </div>
                 </div>
