@@ -54,11 +54,14 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #trust_badge_generator .trust_badge_generator-modal-wrapper {
     background-color: white;
+    width: 650px;
+    margin: auto;
 }
 
 #trust_badge_generator .trust_badge_generator-modal-wrapper .header {
@@ -71,6 +74,10 @@
 
 #trust_badge_generator .trust_badge_generator-modal-wrapper .body {
     padding: 20px;
+}
+
+#trust_badge_generator .trust_badge_generator-modal-wrapper #colorpick {
+    height: 120px;
 }
 
 #trust_badge_generator .trust_badge_generator-modal-wrapper .img-preview {
