@@ -1,3 +1,7 @@
+#trust_badge_generator #colorpick {
+    width: 100%;
+}
+
 #trust_badge_generator .bg-primary {
     background-color: #ff9100 !important;
     color: white;

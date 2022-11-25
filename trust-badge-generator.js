@@ -38,7 +38,7 @@ window.onload = function () {
     colorpick.addEventListener('change', function (e) {
         var colorpick = document.querySelector('#trust_badge_generator #colorpick').value;
         tbg_image.colorize(colorpick);
-        document.querySelector('#trust_badge_generator #colorpick').disabled = true;
+        // document.querySelector('#trust_badge_generator #colorpick').disabled = true;
     })
 
     btnDownload.addEventListener('click', function(e) {
