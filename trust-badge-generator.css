@@ -1,3 +1,7 @@
+#trust_badge_generator .close:after {
+    content: "×";
+}
+
 #trust_badge_generator #colorpick {
     width: 100%;
 }

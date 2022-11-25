@@ -42,7 +42,7 @@ add_shortcode('trust-badge-generator', function ($atts) {
                 <div class='trust_badge_generator-modal-wrapper'>
                     <div class='header'>
                         <h4>Trust Badge Generator</h4>
-                        <button class='close'>×</button>
+                        <button class='close'></button>
                     </div>
                     <div class='body'>
                         <div class='tab-1'>
