@@ -1168,13 +1168,13 @@ class TrustBadgeGeneratorImage {
         var g = parseInt(color.substr(3,2), 16) * .5;
         var b = parseInt(color.substr(5,2), 16) * .5;
 
-        if(this.oldSelectedColorForColorize != undefined) {
-            r = - parseInt(this.oldSelectedColorForColorize.substr(1,2), 16) + r;
-            g = - parseInt(this.oldSelectedColorForColorize.substr(3,2), 16) + g;
-            b = - parseInt(this.oldSelectedColorForColorize.substr(3,2), 16) + b;
-        }
+        // if(this.oldSelectedColorForColorize != undefined) {
+        //     r = - parseInt(this.oldSelectedColorForColorize.substr(1,2), 16) + r;
+        //     g = - parseInt(this.oldSelectedColorForColorize.substr(3,2), 16) + g;
+        //     b = - parseInt(this.oldSelectedColorForColorize.substr(3,2), 16) + b;
+        // }
 
-        this.oldSelectedColorForColorize = color;
+        // this.oldSelectedColorForColorize = color;
 
         var modifiedImageData = this.imageData;
         for(var i=0; i < modifiedImageData.data.length; i = i + 4) {
