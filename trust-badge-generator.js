@@ -15,6 +15,13 @@ window.onload = function () {
         tab2.classList.add("hidden")
         btnWrapper.classList.add("hidden")
     })
+
+    modalElement.addEventListener('click', function (e) {
+        if (e.target === modalElement) {
+            modalElement.classList.add("hidden")
+        }
+    })
+
     document.querySelector('#trust_badge_generator .close').addEventListener('click', function () {
         modalElement.classList.add("hidden")
     })
